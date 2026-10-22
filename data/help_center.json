@@ -1,0 +1,103 @@
+{
+  "about": "A small help center for an online store: ten passages, the searches its users made, and held-out searches with the passage that answers each. Illustrative text written for these examples.",
+  "passages": [
+    {
+      "id": "refund-timeline",
+      "title": "Refund timeline",
+      "text": "Refunds return to the original payment method within 5 to 7 business days after the return is received."
+    },
+    {
+      "id": "store-credit",
+      "title": "Store credit",
+      "text": "Store credit is issued immediately when you choose it at return time."
+    },
+    {
+      "id": "exchanges",
+      "title": "Exchanges",
+      "text": "Exchanges ship once the original item is scanned at the warehouse."
+    },
+    {
+      "id": "gift-cards",
+      "title": "Gift cards",
+      "text": "Gift cards cannot be refunded to a bank account."
+    },
+    {
+      "id": "2fa-backup-codes",
+      "title": "Two-factor backup codes",
+      "text": "To sign in without your phone, use one of the backup codes you saved when you turned on two-factor authentication."
+    },
+    {
+      "id": "2fa",
+      "title": "Two-factor authentication",
+      "text": "Two-factor authentication adds a code from your phone to every sign-in."
+    },
+    {
+      "id": "order-export",
+      "title": "Order export",
+      "text": "Export your orders as a CSV file from Orders > Export, after choosing a date range."
+    },
+    {
+      "id": "order-history",
+      "title": "Order history",
+      "text": "Order history shows the last 90 days; older orders are in the yearly archive."
+    },
+    {
+      "id": "invoice-details",
+      "title": "Invoice details",
+      "text": "Add your company name under Settings > Billing; it appears on every invoice issued after the change."
+    },
+    {
+      "id": "invoices",
+      "title": "Invoices",
+      "text": "Invoices are available under Billing > Invoices, where you can download each one as a PDF."
+    }
+  ],
+  "searches": [
+    "How long do refunds take to arrive?",
+    "reset 2fa without phone",
+    "bulk export orders csv",
+    "invoice missing company name"
+  ],
+  "held_out": [
+    {
+      "query": "When will my refund show up on my card?",
+      "answer": "refund-timeline"
+    },
+    {
+      "query": "Can I get store credit right away?",
+      "answer": "store-credit"
+    },
+    {
+      "query": "my exchange has not shipped yet",
+      "answer": "exchanges"
+    },
+    {
+      "query": "Can a gift card be refunded to my bank?",
+      "answer": "gift-cards"
+    },
+    {
+      "query": "lost my phone, cannot sign in",
+      "answer": "2fa-backup-codes"
+    },
+    {
+      "query": "What does two-factor authentication do?",
+      "answer": "2fa"
+    },
+    {
+      "query": "download all my orders as a spreadsheet",
+      "answer": "order-export"
+    },
+    {
+      "query": "where are orders older than three months",
+      "answer": "order-history"
+    },
+    {
+      "query": "put my company on invoices",
+      "answer": "invoice-details"
+    },
+    {
+      "query": "download an invoice as PDF",
+      "answer": "invoices"
+    }
+  ]
+}

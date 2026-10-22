@@ -1,0 +1,64 @@
+{
+  "name": "Default branch requires pull requests",
+  "target": "branch",
+  "enforcement": "active",
+  "bypass_actors": [],
+  "conditions": {
+    "ref_name": {
+      "include": [
+        "~DEFAULT_BRANCH"
+      ],
+      "exclude": []
+    }
+  },
+  "rules": [
+    {
+      "type": "deletion"
+    },
+    {
+      "type": "non_fast_forward"
+    },
+    {
+      "type": "pull_request",
+      "parameters": {
+        "dismiss_stale_reviews_on_push": false,
+        "require_code_owner_review": false,
+        "require_last_push_approval": false,
+        "required_approving_review_count": 0,
+        "required_review_thread_resolution": true
+      }
+    },
+    {
+      "type": "required_status_checks",
+      "parameters": {
+        "strict_required_status_checks_policy": true,
+        "required_status_checks": [
+          {
+            "context": "Offline checks (ubuntu-latest, Python 3.12)"
+          },
+          {
+            "context": "Offline checks (ubuntu-latest, Python 3.14)"
+          },
+          {
+            "context": "Offline checks (windows-latest, Python 3.12)"
+          },
+          {
+            "context": "Offline checks (windows-latest, Python 3.14)"
+          },
+          {
+            "context": "Offline checks (macos-latest, Python 3.12)"
+          },
+          {
+            "context": "Offline checks (macos-latest, Python 3.14)"
+          },
+          {
+            "context": "Offline checks (macos-15-intel, Python 3.12)"
+          },
+          {
+            "context": "Offline checks (macos-15-intel, Python 3.14)"
+          }
+        ]
+      }
+    }
+  ]
+}

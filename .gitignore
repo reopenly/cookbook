@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+credentials.json
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+vector.png
+specs/
